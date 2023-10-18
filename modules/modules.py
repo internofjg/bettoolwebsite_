@@ -8,7 +8,7 @@ def content():
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             '''
-# @app.route("/")
+@app.route("/")
 def home():
     return '''
     <center><h1>JG說真的－加碼計算機</h1></center>
@@ -32,7 +32,7 @@ def home():
     </form><center>
     '''
 
-# @app.route("/result", methods=["POST"])
+@app.route("/result", methods=["POST"])
 def result():
 #    import numpy as np
 #   import scipy.optimize
