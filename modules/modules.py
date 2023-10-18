@@ -10,7 +10,7 @@ def content():
             '''
 # @app.route("/")
 def home():
-    return """
+    return '''
     <center><h1>JG說真的－加碼計算機</h1></center>
     <center><form action="/result" method="post">
         <label for="cost_price">庫存成本價:</label>
@@ -30,7 +30,7 @@ def home():
 
         <input type="submit" value="計算">
     </form><center>
-    """
+    '''
 
 # @app.route("/result", methods=["POST"])
 def result():
@@ -55,6 +55,6 @@ def result():
 #
 #    ans = add_lot_opt_sol(cost_price, cost_amount, add_price, exit_money, expect_price, -3)
 
-    return f"""
+    return f'''
     <center><div class="result">若想在價格 {add_price} 塊加碼，建議加碼 <h1 style="display: inline">{int(ans.x[0])}</h1> 張，出場價格 <h1 style="display: inline">{ans.x[1]}</h1>塊</div></center><br><br><center><button onclick='history.back()'>返回上一步</button></center>
-    """  
+    '''
