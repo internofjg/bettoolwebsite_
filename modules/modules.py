@@ -11,26 +11,26 @@ def content():
 # @app.route("/")
 def home():
     return '''
-    <center><h1>JG說真的－加碼計算機</h1></center>
-    <center><form action="/result" method="post">
-        <label for="cost_price">庫存成本價:</label>
-        <input type="text" id="cost_price" name="cost_price"><br><br>
+            <center><h1>JG說真的－加碼計算機</h1></center>
+            <center><form action="/result" method="post">
+                <label for="cost_price">庫存成本價:</label>
+                <input type="text" id="cost_price" name="cost_price"><br><br>
 
-        <label for="cost_amount">庫存張數:</label>
-        <input type="text" id="cost_amount" name="cost_amount"><br><br>
+                <label for="cost_amount">庫存張數:</label>
+                <input type="text" id="cost_amount" name="cost_amount"><br><br>
 
-        <label for="add_price">想加碼價位:</label>
-        <input type="text" id="add_price" name="add_price"><br><br>
+                <label for="add_price">想加碼價位:</label>
+                <input type="text" id="add_price" name="add_price"><br><br>
 
-        <label for="expect_price">預期股價會上漲到多少:</label>
-        <input type="text" id="expect_price" name="expect_price"><br><br>
+                <label for="expect_price">預期股價會上漲到多少:</label>
+                <input type="text" id="expect_price" name="expect_price"><br><br>
 
-        <label for="exit_money">加碼後獲利回吐，至少保有多少獲利離場:</label>
-        <input type="text" id="exit_money" name="exit_money"><br><br>
+                <label for="exit_money">加碼後獲利回吐，至少保有多少獲利離場:</label>
+                <input type="text" id="exit_money" name="exit_money"><br><br>
 
-        <input type="submit" value="計算">
-    </form><center>
-    '''
+                <input type="submit" value="計算">
+            </form><center>
+            '''
 
 # @app.route("/result", methods=["POST"])
 def result():
